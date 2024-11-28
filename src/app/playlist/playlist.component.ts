@@ -27,7 +27,7 @@ export interface tracks {
 export class PlaylistComponent implements OnInit {
   tracks: any;
 
-  displayedColumns: string[] = ['Track', 'Album', 'Artist', 'Duration', 'Play'];
+  displayedColumns: string[] = ['Play', 'Track', 'Album', 'Artist', 'Duration' ];
   
   dataSource: MatTableDataSource<tracks>;
   

@@ -4,6 +4,13 @@
 <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
   
     <!-- Name Column -->
+    <ng-container matColumnDef="Play">
+      <th mat-header-cell *matHeaderCellDef> Play </th>
+      <td mat-cell *matCellDef="let element"> 
+        <iframe [src]="element.track.uri | domseguro" width="300" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+      </td>
+    </ng-container>
+    
     <ng-container matColumnDef="Track">
       <th mat-header-cell *matHeaderCellDef> Track </th>
       <td mat-cell *matCellDef="let element"> {{element.track.name}} </td>
@@ -24,13 +31,6 @@
     <ng-container matColumnDef="Duration">
       <th mat-header-cell *matHeaderCellDef> Duration </th>
       <td mat-cell *matCellDef="let element"> {{element.track.duration_ms}} </td>
-    </ng-container>
-
-    <ng-container matColumnDef="Play">
-      <th mat-header-cell *matHeaderCellDef> Play </th>
-      <td mat-cell *matCellDef="let element"> 
-        <iframe [src]="element.track.uri | domseguro" width="300" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-      </td>
     </ng-container>
   
     <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>

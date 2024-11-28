@@ -1,7 +1,6 @@
-# PruebaTicAngular
+# MySpotify
 
-Nota importante: actualizar la pagina si es necesario si no muestra informacion luego de iniciar sesion con Spotify
-Al parecer queda pegado el token y no lo reconoce la primera vez
+Live Demo: https://yeiosorio.github.io/PruebaTicAngular/
 
 Angular 8
 Varsiones para un correcto funcionamiento
@@ -25,12 +24,3 @@ Corre `ng serve -o` para lanzar el proyecto en navegador `http://localhost:4200/
 ## Build
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
